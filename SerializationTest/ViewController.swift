@@ -12,6 +12,11 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let owner1 = Owner(name: "jatin")
+        let owner2 = Owner(name: nil)
+        let car = Car(manufacturer: "Tesla", model: .honda, mileage: 1234.56, owners: [owner1,owner2])
+        car.printLabels()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
